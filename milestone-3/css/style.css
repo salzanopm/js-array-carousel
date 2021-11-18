@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.app-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* text & title*/
+h2 {
+    font-size: 24px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+
+/* column */
+.col {
+    float: left;
+}
+
+/* container slider and thumbnails */
+.container-slider-thumbnails-row {
+    width: 75%;
+    height: 65%;
+}
+
+/* SLIDER */
+.slider {
+    width:80%;
+    height: 100%;
+    position: relative;
+}
+
+/* Images container */
+.images-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* text container */
+.megacontainer-title-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+}
+
+
+/* THUMBNAILS */
+.thumbnails {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.images-container-thumbnails {
+    height: 20%;
+}
+
+.single-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.single-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* arrows */
+.arrow {
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%);
+    font-size: 30px;
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.up {
+    top: 10px;
+}
+.down {
+    bottom: 10px;
+}
