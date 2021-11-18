@@ -14,6 +14,7 @@
     align-items: center;
 }
 
+
 /* text & title*/
 h2 {
     font-size: 24px;
@@ -24,6 +25,7 @@ p {
     font-size: 20px;
     color: white;
 }
+
 
 /* column */
 .col {
@@ -49,6 +51,14 @@ p {
     height: 100%;
 }
 
+/* text container */
+.megacontainer-title-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+}
+
 
 /* THUMBNAILS */
 .thumbnails {
@@ -56,10 +66,10 @@ p {
     height: 100%;
     position: relative;
 }
+
 .images-container-thumbnails {
     height: 20%;
 }
-
 
 .single-image {
     width: 100%;
