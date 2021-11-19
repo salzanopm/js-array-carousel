@@ -53,7 +53,7 @@ for( let i = 0; i < titleArray.length ; i++ ) {
     titleContainer.innerHTML += newTitle;
 }
 
-const textContainer = document.querySelector('.text-container');
+const textContainer = document.querySelector('.title-container');
 // Per ogni elemento di imagesArray popolo i container
 for( let i = 0; i < textArray.length ; i++ ) {
     const pathText = textArray[i];
@@ -145,6 +145,7 @@ upArrow.addEventListener('click', function() {
     // Rimuovere active all'immagine corrente
     allImages[activeImage].classList.remove('active');
     border[activeImage].classList.remove('border');
+    selected[activeImage].classList.add('active-layer');
     // Rimuovere active all'immagine corrente
     allTitle[activeTitle].classList.remove('active');
     // Rimuovere active all'immagine corrente
@@ -177,6 +178,7 @@ upArrow.addEventListener('click', function() {
     // assegnare all'immagine col nouvo indice la classe active
     allImages[activeImage].classList.add('active');
     border[activeImage].classList.add('border');
+    selected[activeImage].classList.remove('active-layer');
     // assegnare all'immagine col nouvo indice la classe active
     allTitle[activeTitle].classList.add('active');
 

@@ -46,7 +46,7 @@ const titleContainer = document.querySelector('.title-container');
 for( let i = 0; i < 1; i++ ) {
     const pathTitle = titleArray[i]
     const newTitle = `
-    <div class="box-title">
+    <div class="box-text">
         <h2>${pathTitle}</h2>
     </div>
     `;
@@ -58,7 +58,7 @@ const textContainer = document.querySelector('.text-container');
 for( let i = 0; i < 1; i++ ) {
     const pathText = textArray[i]
     const newText = `
-    <div class="box-title">
+    <div class="box-text">
         <p>${pathText}</p>
     </div>
     `;

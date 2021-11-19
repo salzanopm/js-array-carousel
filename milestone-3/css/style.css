@@ -49,7 +49,7 @@ p {
 .images-container {
     width: 100%;
     height: 100%;
-    display: block;
+    /* display: block; */
 }
 
 /* text container */
@@ -74,13 +74,12 @@ p {
 
 .box-title {
     display: none;
-    height: 100px;
-    width: 100px;
+    
     
 }
 
 .title-container {
-    display: none;
+
     width: 100%;
     height: 100%;
 }
