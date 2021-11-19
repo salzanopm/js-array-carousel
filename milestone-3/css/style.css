@@ -119,7 +119,9 @@ p {
     position: absolute;
 }
 
-
+.border {
+    border: 3px solid lightgray;
+}
 
 
 .single-image img {
