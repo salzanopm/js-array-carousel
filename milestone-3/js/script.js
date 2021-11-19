@@ -1,3 +1,4 @@
+// img array
 const imagesArray = [
     'img/01.jpg',
     'img/02.jpg',
@@ -6,6 +7,7 @@ const imagesArray = [
     'img/05.jpg'
 ]
 
+// title array
 const titleArray = [
     'Svezia',
     'Svizzera',
@@ -14,6 +16,7 @@ const titleArray = [
     'Paradise'
 ]
 
+// text array
 const textArray = [
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
     'Lorem ipsum',
@@ -23,7 +26,7 @@ const textArray = [
 ]
 
 
-// Popolare partendo dall'array di immagini, il contenitore di immagini e i cerchietti
+// Popolare partendo dall'array di immagini, il contenitore di immagini
 // Prendiamoci i container
 const imagesContainer = document.querySelector('.images-container');
 // Per ogni elemento di imagesArray popolo i container
@@ -40,9 +43,10 @@ for( let i = 0; i < imagesArray.length ; i++ ) {
 }
 
 
-
+// Popolare partendo dall'array dei titoli, il contenitore dei titoli
+// Prendiamoci i container
 const titleContainer = document.querySelector('.title-container');
-// Per ogni elemento di imagesArray popolo i container
+// Per ogni elemento di titleArray popolo i container
 for( let i = 0; i < titleArray.length ; i++ ) {
     const pathTitle = titleArray[i];
     const newTitle = `
@@ -53,8 +57,10 @@ for( let i = 0; i < titleArray.length ; i++ ) {
     titleContainer.innerHTML += newTitle;
 }
 
+// Popolare partendo dall'array dei testi, il contenitore dei testi
+// Prendiamoci i container
 const textContainer = document.querySelector('.title-container');
-// Per ogni elemento di imagesArray popolo i container
+// Per ogni elemento di textArray popolo i container
 for( let i = 0; i < textArray.length ; i++ ) {
     const pathText = textArray[i];
     const newText = `
@@ -98,10 +104,10 @@ downArrow.addEventListener('click', function() {
     allImages[activeImage].classList.remove('active');
     selected[activeImage].classList.add('active-layer'); 
     border[activeImage].classList.remove('border');
-    // Rimuovere active all'immagine corrente
+    // Rimuovere active all titolo corrente
     allTitle[activeTitle].classList.remove('active');
 
-    // Rimuovere active all'immagine corrente
+    // Rimuovere active all testo corrente
     allText[activeText].classList.remove('active');
 
     // incrementare activeImage di 1 solo se non è l'ultima foto
@@ -112,7 +118,7 @@ downArrow.addEventListener('click', function() {
         activeImage = 0;
     }
 
-    // incrementare activeImage di 1 solo se non è l'ultima foto
+    // incrementare activeTitle di 1 solo se non è l'ultima foto
     // se l'immagine è l'ultima ricomincio da zero
     if( activeTitle < titleArray.length - 1 ) {
         activeTitle++;
