@@ -70,7 +70,8 @@ for( let i = 0; i < textArray.length ; i++ ) {
 let activeImage = 0;
 const allImages = document.getElementsByClassName('single-image');
 allImages[activeImage].classList.add('active');
-
+const selected = document.getElementsByClassName('layer');
+selected[activeImage].classList.remove('active-layer');
 // Diamo la classe active ad un elemento
 let activeTitle = 0;
 const allTitle = document.getElementsByClassName('box-title');
@@ -89,6 +90,8 @@ downArrow.addEventListener('click', function() {
 
     // Rimuovere active all'immagine corrente
     allImages[activeImage].classList.remove('active');
+    
+    selected[activeImage].classList.add('active-layer'); 
 
     // Rimuovere active all'immagine corrente
     allTitle[activeTitle].classList.remove('active');
@@ -122,6 +125,7 @@ downArrow.addEventListener('click', function() {
 
     // assegnare all'immagine col nouvo indice la classe active
     allImages[activeImage].classList.add('active');
+    selected[activeImage].classList.remove('active-layer');
 
     // assegnare all'immagine col nouvo indice la classe active
     allTitle[activeTitle].classList.add('active');
